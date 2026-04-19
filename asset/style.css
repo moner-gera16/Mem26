@@ -68,6 +68,19 @@ nav {
   transform: translateY(-2px);
 }
 
+.nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav li a.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid var(--accent-color);
+  font-weight: 700;
+}
+
 nav div {
   padding: 50px 40px;
   background: white;
@@ -106,6 +119,10 @@ nav div p {
 
   .nav li a {
     padding: 15px 20px;
+  }
+
+  .nav li a.active {
+    border-bottom: 3px solid var(--accent-color);
   }
 
   nav div {
